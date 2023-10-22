@@ -5,11 +5,11 @@
  * and returns the corresponding function
  * @line: struct containing line contents and line number
  * @meta: struct containing all allocated memory
- *
+ *      
  * Return: pointer to the matching function
- */
+ */                     
 void (*get_op_func(line_t line, meta_t *meta))(stack_t **, unsigned int)
-{
+{           
 	unsigned int i = 0;
 	instruction_t ops[] = {
 		{"push", push},
