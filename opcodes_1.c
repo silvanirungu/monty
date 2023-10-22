@@ -1,12 +1,12 @@
 #include "monty.h"
-
+            
 /**
  * push - pushes a node to the top of stack
  * @stack: pointer to the head node pointer of stack
  * @nline: the line number
  *
  * Return: Nothing.
- */
+ */              
 void push(stack_t **stack, unsigned int nline)
 {
 	stack_t *new;
@@ -15,8 +15,8 @@ void push(stack_t **stack, unsigned int nline)
 	{
 		fprintf(stderr, "L%d: stack not found\n", nline);
 		exit(EXIT_FAILURE);
-	}
-
+	}      
+         
 	new = malloc(sizeof(stack_t));
 	if (new == NULL)
 	{
