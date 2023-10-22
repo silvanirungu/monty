@@ -5,15 +5,15 @@
  * @stack: pointer to the head node pointer of stack
  * @nline: the line number
  * Return: Nothing.
- */
+ */             
 void rotl(stack_t **stack, unsigned int nline)
-{
+{        
 	stack_t *temp;
 	int hold_this, hold_this_again;
 	(void)nline;
-
+         
 	if (stack == NULL || *stack == NULL)
-	{
+	{     
 		nop(stack, nline);
 	}
 
